@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
+
+/*Document style*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+html, body {
+    font-family: 'Roboto','Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+/*Navigation menu*/
+nav > ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav > ul > li {
+    padding: 1.2rem; /*the root is the html tag*/
+}
+
+
+/*Sections*/
+img {
+    width: 600px;
+}
+
+.container {
+    display: flex;
+    margin-bottom: 1.5rem;
+    color:white;
+    font-size: 1.5rem;
+}
+
+#container-html {
+    background-color: #72c1f5;
+}
+
+#container-css {
+    background-color: #e74c3c;
+}
+
+#container-javascript {
+    background-color: #f1c40f;
+}
+
+/*MAIN*/
+#opening h2 {
+    position: absolute;
+    text-align: center;
+    left: 50%; /*because the postion is absolute and is independent, use left instead of margin-left*/
+    top: 50%; 
+    transform: translate(-50%, -50%); /*Fix the center*/
+}
+
+#opening img {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+
+
+
+
