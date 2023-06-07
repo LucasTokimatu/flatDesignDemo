@@ -29,6 +29,7 @@ nav > ul > li {
 /*Sections*/
 img {
     width: 600px;
+    object-fit: cover;
 }
 
 .container {
@@ -50,13 +51,71 @@ img {
     background-color: #f1c40f;
 }
 
+#sections .header {
+    text-align: center;
+    margin: 15px;
+}
+
+#sections .texts {
+    margin-left: 15px;
+    margin-right: 5px;
+}
+
+#sections .description {
+    position: relative;
+}
+
+#sections .btns {
+    position: absolute;
+    left:50%;
+    top: 70%;
+    transform:translate(-50%,-50%);
+    border-radius: 10px;
+    font-family: 'Roboto','Times New Roman', Times, serif;
+    border:none;
+    font-size: 1.6rem;
+    padding: 15px;
+    text-transform: uppercase;
+    background: white;
+    transition: 0.5s ease;
+}
+
+#sections .btns:hover {
+    cursor: pointer;
+    background-color: rgb(17, 25, 131);
+    color: white;
+    transition: 0.5s ease;
+}
+
 /*MAIN*/
+
+#opening {
+    position:relative; /*necessary to make the postion absolute for its child elements*/
+    margin-bottom: 40px;
+}
+
+#opening::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Adjust the opacity (last value) to your preference */
+    z-index: 1;
+  }
+
 #opening h2 {
     position: absolute;
     text-align: center;
     left: 50%; /*because the postion is absolute and is independent, use left instead of margin-left*/
     top: 50%; 
     transform: translate(-50%, -50%); /*Fix the center*/
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    font-weight: 1500;
+    color: white;
+    z-index: 2;
 }
 
 #opening img {
