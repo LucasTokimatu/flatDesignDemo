@@ -24,6 +24,15 @@ nav > ul{
 nav > ul > li {
     padding: 1.2rem; /*the root is the html tag*/
 }
+nav > ul > li:hover {
+    padding: 1.2rem; /*the root is the html tag*/
+    background-color: #2134e4;
+    transition: 0.5s ease;
+    color: white;
+}
+nav > ul > li:hover > a {
+    color:white;
+}
 
 
 /*Sections*/
@@ -40,15 +49,15 @@ img {
 }
 
 #container-html {
-    background-color: #72c1f5;
+    background-image: linear-gradient(to bottom, #72c1f5, #45a8eb);
 }
 
 #container-css {
-    background-color: #e74c3c;
+    background-image: linear-gradient(to bottom, #e6877c, #e74c3c);
 }
 
 #container-javascript {
-    background-color: #f1c40f;
+    background-image: linear-gradient(to bottom, #e7c84b, #f1c40f);
 }
 
 #sections .header {
@@ -82,10 +91,26 @@ img {
 
 #sections .btns:hover {
     cursor: pointer;
-    background-color: rgb(17, 25, 131);
     color: white;
     transition: 0.5s ease;
 }
+
+#sections #btn-html:hover {
+    background-color: rgb(20, 34, 163);
+}
+
+#sections #btn-css:hover {
+    background-color: rgba(214, 49, 43, 0.87);
+}
+
+#sections #btn-javascript:hover {
+    background-color: rgba(145, 153, 29, 0.87);
+}
+
+section:nth-child(even) .container {
+    flex-direction: row-reverse;
+}
+
 
 /*MAIN*/
 
@@ -123,9 +148,27 @@ img {
     height: 100vh;
 }
 
+#opening h2 span {
+    opacity: 0;
+    animation: textAppear 1s ease forwards;
+  }
 
+#opening h2 span:nth-child(2) {
+    animation-delay: 0.5s;
+  }
+  
+#opening h2 span:nth-child(3) {
+    animation-delay: 1.0s;
+  }
 
-
-
+/*KEYFRAMES*/
+@keyframes textAppear {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 
 
