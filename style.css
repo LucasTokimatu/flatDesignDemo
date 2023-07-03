@@ -22,11 +22,15 @@ nav > ul{
 }
 
 nav > ul > li {
+
+}
+nav > ul > li > a{
     padding: 1.2rem; /*the root is the html tag*/
+    color:black; /*the root is the html tag*/
 }
 nav > ul > li:hover {
     padding: 1.2rem; /*the root is the html tag*/
-    background-color: #2134e4;
+    background-color: #5260db;
     transition: 0.5s ease;
     color: white;
 }
