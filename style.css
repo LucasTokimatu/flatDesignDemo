@@ -21,9 +21,6 @@ nav > ul{
     justify-content: flex-end;
 }
 
-nav > ul > li {
-
-}
 nav > ul > li > a{
     padding: 1.2rem; /*the root is the html tag*/
     color:black; /*the root is the html tag*/
